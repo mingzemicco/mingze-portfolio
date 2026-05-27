@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <title>MINGZE NI — Product Leader & Founder</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.svg">
+
+    <!-- Primary SEO -->
+    <meta name="description"
+        content="Mingze NI — Product Leader & Serial Founder based in Paris. Building production-grade AI applications, consumer products, fintech infrastructure, and digital banking systems.">
+    <meta name="author" content="Mingze NI">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+    <meta name="keywords"
+        content="Mingze NI, Product Leader, Founder, AI Applications, Fintech, Digital Banking, Paris, Product Management, Startup">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MINGZE NI — Product Leader & Founder">
+    <meta property="og:description"
+        content="Building production-grade AI applications, consumer products, and fintech infrastructure. Product Leader & Serial Founder based in Paris, France.">
+    <meta property="og:site_name" content="MINGZE NI">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="MINGZE NI — Product Leader & Founder">
+    <meta name="twitter:description"
+        content="Building production-grade AI applications, consumer products, and fintech infrastructure. Based in Paris, France.">
+    <meta name="twitter:creator" content="@mingzeni">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mingze NI",
+      "jobTitle": "Product Leader & Serial Founder",
+      "description": "Architecting and shipping production-grade AI applications, consumer products, and digital banking infrastructure from Paris, France.",
+      "sameAs": ["https://www.linkedin.com/in/nimingze/"],
+      "email": "nimingze@hotmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Paris",
+        "addressCountry": "FR"
+      },
+      "knowsAbout": [
+        "AI Product Development", "Fintech", "Digital Banking",
+        "Consumer Applications", "Quantitative Systems", "Startup Founding"
+      ]
+    }
+    </script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "border-graphite": "#e0e0e0",
+                        "surface-container": "#f2f2f2",
+                        "primary": "#0a0a0a",
+                        "background": "#fafafa"
+                    },
+                    fontFamily: {
+                        "serif-title": ["EB Garamond", "serif"],
+                        "sans-body": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-color: #fafafa;
+            color: #0a0a0a;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .serif-text {
+            font-family: 'EB Garamond', serif;
+        }
+
+        .sans-text {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .glass-header {
+            backdrop-filter: blur(20px);
+            background-color: rgba(250, 250, 250, 0.92);
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .project-video {
+            opacity: 1;
+            filter: none;
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .project-card:hover .project-video {
+            transform: scale(1.01);
+        }
+
+        /* Allow labels to overflow container */
+        .relative.aspect-video {
+            overflow: visible !important;
+        }
+
+        /* Video labels positioned above the image/iframe */
+        .relative.aspect-video>div[class*="absolute"] {
+            position: absolute !important;
+            top: -26px !important;
+            left: 0 !important;
+            z-index: 50;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                gap: 4rem !important;
+            }
+
+            .project-video.mobile-active {
+                opacity: 1 !important;
+                filter: none !important;
+            }
+        }
+
+        /* Navigation active state */
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: #0a0a0a;
+            transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .nav-link.active {
+            color: #0a0a0a;
+        }
+
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-index {
+            border-bottom: 1px solid #0a0a0a;
+        }
+
+        .nav-index::after {
+            display: none;
+        }
+
+        /* 隐藏滚动条但保留功能 */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="sans-text selection:bg-black selection:text-white overflow-x-hidden">
+
+    <nav
+        class="fixed top-0 w-full h-20 bg-transparent z-50 flex justify-between items-center px-6 md:px-16 border-b border-border-graphite transition-all duration-500">
+        <div class="serif-text text-xl md:text-2xl tracking-tighter text-black font-medium">Mingze NI Portfolio</div>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="nav-link nav-index sans-text text-[10px] tracking-[0.25em] text-black border-b border-black pb-1 transition-all duration-300"
+                href="#">INDEX</a>
+            <a class="nav-link nav-consumer sans-text text-[10px] tracking-[0.25em] text-gray-700 hover:text-black transition-all duration-300 pb-1 relative"
+                href="#consumer">01. CONSUMER APPS</a>
+            <a class="nav-link nav-enterprise sans-text text-[10px] tracking-[0.25em] text-gray-700 hover:text-black transition-all duration-300 pb-1 relative"
+                href="#enterprise">02. ENTERPRISE B2B</a>
+            <a class="nav-link nav-fintech sans-text text-[10px] tracking-[0.25em] text-gray-700 hover:text-black transition-all duration-300 pb-1 relative"
+                href="#fintech">03. FINTECH & QUANT</a>
+            <a class="nav-link nav-contact sans-text text-[10px] tracking-[0.25em] text-gray-700 hover:text-black transition-all duration-300 pb-1 relative"
+                href="#contact">CONTACT</a>
+        </div>
+        <div class="flex md:hidden gap-3 sans-text text-[9px] tracking-widest text-gray-400">
+            <a href="#consumer" class="hover:text-black">C-APP</a>/
+            <a href="#enterprise" class="hover:text-black">B2B</a>/
+            <a href="#fintech" class="hover:text-black">QUANT</a>
+        </div>
+    </nav>
+
+    <main class="pt-36 md:pt-48">
+        <section class="px-6 md:px-16 mb-24 md:mb-40 max-w-5xl">
+            <h1 class="serif-text text-4xl md:text-7xl text-black leading-[1.1] tracking-tight mb-8">
+                Designing product systems to find the shared story between technology, people, and business.
+            </h1>
+            <p class="sans-text text-gray-700 text-base md:text-lg max-w-2xl leading-relaxed">
+                Mingze NI — Product Leader & Serial Founder. Architecting and shipping production-grade AI applications
+                and digital banking infrastructure from Paris, France.
+            </p>
+        </section>
+
+        <section
+            class="mb-24 md:mb-40 overflow-hidden border-t border-b border-border-graphite py-8 md:py-12 bg-[#ffffff]/40">
+            <div class="px-6 md:px-16 mb-6 md:mb-8">
+                <p class="sans-text text-[16px] tracking-[0.3em] text-gray-700 uppercase">
+                    Trusted by institutions
+                </p>
+            </div>
+
+            <div class="relative w-full flex overflow-x-hidden group">
+                <div
+                    class="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none">
+                </div>
+                <div
+                    class="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none">
+                </div>
+
+                <div
+                    class="animate-marquee flex whitespace-nowrap items-center gap-16 md:gap-32 shrink-0 pr-16 md:pr-32 group-hover:[animation-play-state:paused]">
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">RENAULT</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">IBM</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">BCG</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">AXA</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">BNP
+                        PARIBAS</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">ENGIE</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">ORANGE</span>
+                </div>
+
+                <div class="animate-marquee flex whitespace-nowrap items-center gap-16 md:gap-32 shrink-0 pr-16 md:pr-32 group-hover:[animation-play-state:paused]"
+                    aria-hidden="true">
+                    <span
+                        class="serif-text text-xl md:text-3xl font-light tracking-[0.15em] text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">RENAULT</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-black tracking-wider text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">IBM</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">BCG</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-extrabold tracking-normal text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">AXA</span>
+                    <span
+                        class="serif-text text-lg md:text-2xl font-normal tracking-wide text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">BNP
+                        PARIBAS</span>
+                    <span
+                        class="sans-text text-xs md:text-sm font-medium tracking-[0.3em] text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">ALCATEL
+                        LUCENT</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-light tracking-wide text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">orange</span>
+                </div>
+            </div>
+        </section>
+
+        <script id="tailwind-config-update">
+            // 动态把无缝滚动动画混入现有的 Tailwind 配置中
+            tailwind.config.theme.extend.animation = {
+                marquee: 'marquee 35s linear infinite',
+            };
+            tailwind.config.theme.extend.keyframes = {
+                marquee: {
+                    '0%': { transform: 'translateX(0%)' },
+                    '10%': { transform: 'translateX(0%)' }, // 微调防抖
+                    '100%': { transform: 'translateX(-100%)' },
+                }
+            };
+        </script>
+
+        <section class="px-6 md:px-16 mb-32 md:mb-52 scroll-mt-28" id="consumer">
+            <div class="flex items-baseline justify-between border-b border-border-graphite pb-4 mb-8 md:mb-16">
+                <h2 class="serif-text text-2xl md:text-4xl text-black font-light">01. CONSUMER APPLICATIONS</h2>
+                <span class="sans-text text-[9px] tracking-[0.2em] text-gray-700 hidden sm:inline">MULTI-MODAL
+                    INTERACTION</span>
+            </div>
+
+            <!-- 2-column row 1: Bailleur Copilote · ImmoHunter -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-14 md:mb-20">
+                <div class="project-card group cursor-pointer">
+                    <div
+                        class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
+                            <source src="https://youtu.be/yOZUfJPxXWU" type="video/mp4">
+                        </video>
+                        <div class="absolute top-4 left-4 sans-text text-[10px] tracking-widest text-black/85"> //
+                            PROPTECH AGENT</div>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-between items-start gap-3">
+                        <div>
+                            <h3 class="serif-text text-xl md:text-2xl text-black mb-1 leading-tight">Bailleur Copilote —
+                                Autonomous Real Estate Agent
+                            </h3>
+                            <p class="sans-text text-sm text-gray-700">There are 2 million independent landlords
+                                managing 10 million properties in France via manual, offline processes. Bailleur
+                                Copilote shifts property management to autopilot. Operating as a Chrome Extension, this
+                                autonomous Agent interacts natively with platforms like LeBonCoin, conversing with
+                                rental candidates, parsing financial dossiers, and qualifying leads. The built-in
+                                reinforcement loop learns the landlord’s specific tone and criteria over time,
+                                converting property management from a daily friction into an automated background
+                                process.</p>
+                        </div>
+                        <span
+                            class="sans-text text-[10px] tracking-widest text-gray-700 border border-gray-200 px-3 py-1 font-mono shrink-0">[AGENTIC
+                            UI]</span>
+                    </div>
+                </div>
+
+                <div class="project-card group cursor-pointer">
+                    <div
+                        class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
+                            <source src="https://youtu.be/tJB9XTe6lrQ" type="video/mp4">
+                        </video>
+                        <div class="absolute top-4 left-4 sans-text text-[10px] tracking-widest text-black/85">//
+                            PREDICTIVE PROPTECH</div>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-between items-start gap-3">
+                        <div>
+                            <h3 class="serif-text text-xl md:text-2xl text-black mb-1 leading-tight">ImmoHunter</h3>
+                            <p class="sans-text text-sm text-gray-700">A data-driven sourcing system engineered for real
+                                estate investors, property flippers (marchands de biens), and developers in France. By
+                                continuously scraping, unifying, and analyzing real estate listings across fragmented
+                                local markets, ImmoHunter identifies mispriced assets, high-yield opportunities, and
+                                undervalued plots before they hit mainstream aggregators.</p>
+                        </div>
+                        <span
+                            class="sans-text text-[10px] tracking-widest text-gray-700 border border-gray-200 px-3 py-1 font-mono shrink-0">[BIG
+                            DATA CORE]</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2-column row 2: AI Studio Harcourt · Miccopay -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-14 md:mb-20">
+                <div class="project-card group cursor-pointer">
+                    <div
+                        class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
+                            <source src="https://youtu.be/MVHnHU3O280" type="video/mp4">
+                        </video>
+                        <div class="absolute top-4 left-4 sans-text text-[10px] tracking-widest text-black/85"> //
+                            GENERATIVE ART</div>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-between items-start gap-3">
+                        <div>
+                            <h3 class="serif-text text-xl md:text-2xl text-black mb-1 leading-tight">AI Studio Harcourt
+                            </h3>
+                            <p class="sans-text text-sm text-gray-700">An early 2024 consumer application that brought
+                                the world-famous, iconic black-and-white luxury aesthetics of Studio Harcourt into the
+                                generative AI era. By fine-tuning specialized diffusion models on complex historical
+                                lighting profiles, shadow contrasts, and textures, this engine allows users to
+                                synthesize hyper-realistic, luxury-tier portrait photography on-demand.</p>
+                        </div>
+                        <span
+                            class="sans-text text-[10px] tracking-widest text-gray-700 border border-gray-200 px-3 py-1 font-mono shrink-0">[AIGC
+                            ENGINE]</span>
+                    </div>
+                </div>
+
+                <div class="project-card group cursor-pointer">
+                    <div
+                        class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
+                            <source src="https://youtu.be/oggQRetSEGw" type="video/mp4">
+                        </video>
+                        <div class="absolute top-4 left-4 sans-text text-[10px] tracking-widest text-black/85"> //
+                            TRANSACTION INFRA</div>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-between items-start gap-3">
+                        <div>
+                            <h3 class="serif-text text-xl md:text-2xl text-black mb-1 leading-tight">Miccopay —
+                                Contactless QR Settlement</h3>
+                            <p class="sans-text text-sm text-gray-700">A contactless, mobile-first QR payment
+                                infrastructure engineered for high-volume hospitality venues. Similar to Sunday App,
+                                Miccopay allowed diners to instantly split tabs and pay bills directly from their mobile
+                                web browser without application downloads or server interaction, optimizing table
+                                turnover and staff efficiency.</p>
+                        </div>
+                        <span
+                            class="sans-text text-[10px] tracking-widest text-gray-700 border border-gray-200 px-3 py-1 font-mono shrink-0">[PAYMENT
+                            ROUTER]</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2-column row 3: Backtrack Looper · Platbook -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-14 md:mb-20">
+                <div class="project-card group cursor-pointer" data-youtube-url="https://youtu.be/Dz4PWweNCPM">
+                    <div
+                        class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
+                            <source src="https://youtu.be/Dz4PWweNCPM" type="video/mp4">
+                        </video>
+                        <div class="absolute top-4 left-4 sans-text text-[10px] tracking-widest text-black/85"> //
+                            CREATIVE SYSTEMS</div>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-between items-start gap-3">
+                        <div>
+                            <h3 class="serif-text text-xl md:text-2xl text-black mb-1 leading-tight">Backtrack Looper
+                            </h3>
+                            <p class="sans-text text-sm text-gray-700">Traditional DAWs (Logic Pro) are too complex for
+                                casual practice, and static media players (YouTube, Spotify) lack real-time looping
+                                flexibility. Backtrack Looper is a stripped-down, hyper-intuitive utility designed for
+                                musicians to instantly generate, isolate, and practice over backtracks. It removes all
+                                interface friction, serving as the purest jam-session companion for guitarists,
+                                bassists, and vocalists.</p>
+                        </div>
+                        <span
+                            class="sans-text text-[10px] tracking-widest text-gray-700 border border-gray-200 px-3 py-1 font-mono shrink-0">[WEB
+                            PRODUCT]</span>
+                    </div>
+                </div>
+
+                <div class="project-card group cursor-pointer" data-youtube-url="https://youtu.be/5AwIoAt-xdw">
+                    <div
+                        class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
+                            <source src="https://youtu.be/5AwIoAt-xdw" type="video/mp4">
+                        </video>
+                        <div class="absolute top-4 left-4 sans-text text-[10px] tracking-widest text-black/85"> //
+                            PLATBOOK</div>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-between items-start gap-3">
+                        <div>
+                            <h3 class="serif-text text-xl md:text-2xl text-black mb-1 leading-tight">Platbook — "Shazam
+                                for Food"</h3>
+                            <p class="sans-text text-sm text-gray-700">International travel introduces a massive daily
+                                friction: deciphering local, text-only restaurant menus. Platbook is a mobile-first,
+                                multi-modal AI application engineered as the "Shazam for food"—the world's first
+                                platform allowing users to instantly SEE dishes before ordering.
+
+                                By combining high-speed edge OCR, context-aware localized LLM translation, and real-time
+                                visual generation/sourcing pipeline, users can scan any foreign-language menu. Platbook
+                                instantly overlays intuitive, high-fidelity images of the dishes, auto-categorizes the
+                                plates (e.g., allergens, dietary styles), and appends descriptive culinary context. It
+                                bridges the gap between structured AI vision and localized cultural discovery, turning a
+                                stressful dining experience into a frictionless, visual delight.</p>
+                        </div>
+                        <span
+                            class="sans-text text-[10px] tracking-widest text-gray-700 border border-gray-200 px-3 py-1 font-mono shrink-0">[MOBILE
+                            PLATFORM]</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-6 md:px-16 mb-32 md:mb-52 scroll-mt-28" id="enterprise">
+            <div class="flex items-baseline justify-between border-b border-border-graphite pb-4 mb-8 md:mb-16">
+                <h2 class="serif-text text-2xl md:text-4xl text-black font-light">02. ENTERPRISE INTELLIGENCE</h2>
+                <span class="sans-text text-[9px] tracking-[0.2em] text-gray-700 hidden sm:inline">INDUSTRIAL DELIVERY &
+                    OVERHEAD DESTRUCTION</span>
+            </div>
+
+            <!-- 2-column: Autéra · Miccobuy -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-20 md:mb-20">
+                <div class="project-card group cursor-pointer">
+                    <div
+                        class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
+                            <source src="https://youtu.be/lj3emkqV9-E" type="video/mp4">
+                        </video>
+                        <div class="absolute top-4 left-4 sans-text text-[10px] tracking-widest text-black/85"> //
+                            SUPPLY CHAIN</div>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-between items-start gap-3">
+                        <div>
+                            <h3 class="serif-text text-xl md:text-2xl text-black mb-1 leading-tight">Autéra EV
+                                Management Platform</h3>
+                            <p class="sans-text text-sm text-gray-700">Autéra specializes in the strategic import and
+                                distribution of Chinese Electric Vehicles (EVs) across Luxembourg and Belgium. As the
+                                Interim CTO, I designed, architected, and delivered their internal enterprise management
+                                ERP and localized consumer-facing web platform, unifying complex international logistics
+                                tracking with native local dealer network management.</p>
+                        </div>
+                        <span
+                            class="sans-text text-[10px] tracking-widest text-gray-700 border border-gray-200 px-3 py-1 font-mono shrink-0">[ENTERPRISE
+                            CORE]</span>
+                    </div>
+                </div>
+
+                <div class="project-card group cursor-pointer">
+                    <div
+                        class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
+                            <source src="https://youtu.be/rW4UyA4TvcI" type="video/mp4">
+                        </video>
+                        <div class="absolute top-4 left-4 sans-text text-[10px] tracking-widest text-black/85"> //
+                            B2B2C MARKETPLACE</div>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-between items-start gap-3">
+                        <div>
+                            <h3 class="serif-text text-xl md:text-2xl text-black mb-1 leading-tight">Miccobuy -
+                                Direct-to-Factory AI Sourcing Platform</h3>
+                            <p class="sans-text text-sm text-gray-700">A marketplace architecture designed to disrupt
+                                traditional retail supply chains. Miccobuy bypassed regional distributors by leveraging
+                                cross-border data to connect European end-consumers directly with manufacturing plants
+                                in China. By automating logistics and catalog translation, it delivered identical
+                                quality goods to users at a 10x cost reduction compared to domestic retail prices.</p>
+                        </div>
+                        <span
+                            class="sans-text text-[10px] tracking-widest text-gray-700 border border-gray-200 px-3 py-1 font-mono shrink-0">[LOGISTICS
+                            ENGINE]</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-6 md:px-16 mb-32 md:mb-52 scroll-mt-28" id="fintech">
+            <div class="flex items-baseline justify-between border-b border-border-graphite pb-4 mb-8 md:mb-16">
+                <h2 class="serif-text text-2xl md:text-4xl text-black font-light">03. FINTECH INFRASTRUCTURE & QUANT
+                    SYSTEMS</h2>
+                <span class="sans-text text-[9px] tracking-[0.2em] text-gray-700 hidden sm:inline">MATHEMATICAL
+                    PRECISION & ABSOLUTE ALPHA</span>
+            </div>
+
+            <!-- 3-column: Micco Neobank · FOREX · Global Equities -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-14 md:mb-20">
+                <div class="project-card group cursor-pointer">
+                    <div
+                        class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
+                            <source src="https://youtu.be/x_LAf-KqDaQ" type="video/mp4">
+                        </video>
+                        <div class="absolute top-3 left-3 sans-text text-[9px] tracking-widest text-black/85"> //
+                            CHALLENGER BANK</div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="serif-text text-xl text-black leading-tight">Micco — Neobank Infrastructure for
+                            Cross-Border Founders</h3>
+                        <p class="sans-text text-xs text-gray-700 leading-relaxed">The first dedicated European
+                            challenger bank tailored for Asian diasporic entrepreneurs. Micco built a frictionless
+                            financial gateway incorporating international remittances, high-limit commercial transfers,
+                            multi-currency accounts, and automated corporate registration services. Incubated inside
+                            Station F, backed by BPI France, and mentored directly by tech icons Xavier Niel and Maurice
+                            Lévy.</p>
+                        <div class="flex items-center justify-between mt-1">
+                            <span
+                                class="sans-text text-[9px] tracking-widest text-gray-700 border border-gray-200 px-2 py-0.5 font-mono">[NEOBANK
+                                BLOCK]</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card group cursor-pointer">
+                    <div
+                        class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
+                            <source src="https://youtu.be/xMK92IKb2HE" type="video/mp4">
+                        </video>
+                        <div class="absolute top-3 left-3 sans-text text-[9px] tracking-widest text-black/85"> //
+                            QUANT MODEL</div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="serif-text text-xl text-black leading-tight">FOREX EUR/USD Predictive Engine</h3>
+                        <p class="sans-text text-xs text-gray-700 leading-relaxed">A professional-grade quantitative
+                            dashboard engineered for institutional hedge fund applications. By ingestive real-time
+                            futures market data and modeling structural carry factors, this predictive machine
+                            translates raw global macro variables into high-conviction EUR/USD directional signals. It
+                            bridges the gap between deep data training and actionable institutional trading.</p>
+                        <div class="flex items-center justify-between mt-1">
+                            <span
+                                class="sans-text text-[9px] tracking-widest text-gray-700 border border-gray-200 px-2 py-0.5 font-mono">[MACRO
+                                INTELLIGENCE]</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card group cursor-pointer">
+                    <div
+                        class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
+                            <source src="https://youtu.be/Thd2-ojzPZY" type="video/mp4">
+                        </video>
+                        <div class="absolute top-3 left-3 sans-text text-[9px] tracking-widest text-black/85"> //
+                            ASYMMETRIC RISK</div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="serif-text text-xl text-black leading-tight">Global Equities Sharpe/Sortino Alpha
+                            Ranker</h3>
+                        <p class="sans-text text-xs text-gray-700 leading-relaxed">Built specifically for asset managers
+                            seeking non-correlated returns. This analytical core continuously scans major global
+                            indices—including the S&P 500, HKEX, CAC 40, and Nikkei—ranking them via dynamic Sharpe and
+                            Sortino algorithms. It cuts through market noise to isolate asymmetric risk-reward profiles,
+                            flagging potential 10x breakout equities and generating institutional-grade Alpha signals.
+                        </p>
+                        <div class="flex items-center justify-between mt-1">
+                            <span
+                                class="sans-text text-[9px] tracking-widest text-gray-700 border border-gray-200 px-2 py-0.5 font-mono">[ALPHA
+                                SCREENER]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2-column double row: 4 remaining projects -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-14 md:mb-20">
+                <div class="project-card group cursor-pointer">
+                    <div
+                        class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
+                            <source src="https://youtu.be/oK4UiBJuDUI" type="video/mp4">
+                        </video>
+                        <div class="absolute top-4 left-4 sans-text text-[10px] tracking-widest text-black/85"> //
+                            REASONING INFERENCE</div>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-between items-start gap-3">
+                        <div>
+                            <h3 class="serif-text text-xl md:text-2xl text-black mb-1 leading-tight">S&P 500 LLM-Driven
+                                AI Disruption Risk Screener</h3>
+                            <p class="sans-text text-sm text-gray-700">How do you hedge against the AI revolution? This
+                                screener utilizes advanced LLM reasoning to evaluate the structural vulnerability of
+                                every S&P 500 company against emerging AI capabilities. By analyzing business models,
+                                labor dependencies, and software stacks, the system generates automated deep-dive
+                                reasoning to identify strategic Long/Short opportunities.</p>
+                        </div>
+                        <span
+                            class="sans-text text-[10px] tracking-widest text-gray-700 border border-gray-200 px-3 py-1 font-mono shrink-0">[LLM
+                            FACTOR]</span>
+                    </div>
+                </div>
+
+                <div class="project-card group cursor-pointer">
+                    <div
+                        class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
+                            <source src="https://youtu.be/Hj67tS7UidM" type="video/mp4">
+                        </video>
+                        <div class="absolute top-4 left-4 sans-text text-[10px] tracking-widest text-black/85"> //
+                            QUANTITATIVE NLP</div>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-between items-start gap-3">
+                        <div>
+                            <h3 class="serif-text text-xl md:text-2xl text-black mb-1 leading-tight">CEO Sincerity &
+                                Pivot Tracker</h3>
+                            <p class="sans-text text-sm text-gray-700">Designed to audit executive integrity. This
+                                NLP-powered intelligence tool processes multi-quarter corporate earnings transcripts
+                                (such as LVMH) to quantify the "Execution Gap." By mapping what a CEO/CFO promised in
+                                previous quarters against actual realized financial statements, it builds a structural
+                                sincerity index—giving investors an un-gameable metric on management quality.</p>
+                        </div>
+                        <span
+                            class="sans-text text-[10px] tracking-widest text-gray-700 border border-gray-200 px-3 py-1 font-mono shrink-0">[TRANSCRIPT
+                            AUDIT]</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-14 md:mb-20">
+                <div class="project-card group cursor-pointer">
+                    <div
+                        class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
+                            <source src="https://youtu.be/NoBNPG6kNC4" type="video/mp4">
+                        </video>
+                        <div class="absolute top-4 left-4 sans-text text-[10px] tracking-widest text-black/85"> //
+                            RECON PIPELINE</div>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-between items-start gap-3">
+                        <div>
+                            <h3 class="serif-text text-xl md:text-2xl text-black mb-1 leading-tight">Unified
+                                Institutional Market Data Engine</h3>
+                            <p class="sans-text text-sm text-gray-700">A centralized, high-throughput database compiling
+                                comprehensive financial fundamentals for all major equities. It seamlessly aggregates
+                                real-time pricing data, income statements, balance sheets, cashflow statements, and
+                                historical earnings transcripts into a single, cohesive developer API and frontend
+                                UI—forming the infrastructure for algorithmic financial tooling.</p>
+                        </div>
+                        <span
+                            class="sans-text text-[10px] tracking-widest text-gray-700 border border-gray-200 px-3 py-1 font-mono shrink-0">[DATA
+                            ENGINE]</span>
+                    </div>
+                </div>
+
+                <div class="project-card group cursor-pointer">
+                    <div
+                        class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
+                            <source src="https://youtu.be/ARGeE2UEX4Y" type="video/mp4">
+                        </video>
+                        <div class="absolute top-4 left-4 sans-text text-[10px] tracking-widest text-black/85"> //
+                            ALPHA TRACKER</div>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-between items-start gap-3">
+                        <div>
+                            <h3 class="serif-text text-xl md:text-2xl text-black mb-1 leading-tight">S&P Founder-Led
+                                Alpha Screener</h3>
+                            <p class="sans-text text-sm text-gray-700">In periods of paradigm shifts like the AI
+                                revolution, corporate agility is the ultimate separator. This index tracks founder-run
+                                vs. professionally managed companies across the S&P 500. Statistically, founder-led
+                                firms possess the unique mandate and equity alignment required to successfully execute
+                                drastic, existential pivots. This tool serves as a high-conviction structural Alpha
+                                signal for fund managers.</p>
+                        </div>
+                        <span
+                            class="sans-text text-[10px] tracking-widest text-gray-700 border border-gray-200 px-3 py-1 font-mono shrink-0">[GOVERNANCE
+                            ALGORITHMS]</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="px-6 md:px-16 mb-32 md:mb-52 scroll-mt-28" id="contact">
+            <div class="flex items-baseline justify-between border-b border-border-graphite pb-4 mb-8 md:mb-16">
+                <h2 class="serif-text text-2xl md:text-4xl text-black font-light">CONTACT</h2>
+                <span class="sans-text text-[9px] tracking-[0.2em] text-gray-700 hidden sm:inline">LET'S BUILD
+                    TOGETHER</span>
+            </div>
+
+            <div class="max-w-2xl">
+                <p class="sans-text text-gray-700 text-base leading-relaxed mb-12">
+                    Interested in collaborating on AI products, fintech infrastructure, or exploring new opportunities?
+                    Get in touch.
+                </p>
+
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="name" class="block sans-text text-sm text-black mb-2">Name</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full px-4 py-3 bg-surface-container border border-border-graphite text-black placeholder-gray-400 sans-text text-sm focus:outline-none focus:border-black transition-colors duration-300"
+                            placeholder="Your name">
+                    </div>
+
+                    <div>
+                        <label for="email" class="block sans-text text-sm text-black mb-2">Email</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-3 bg-surface-container border border-border-graphite text-black placeholder-gray-400 sans-text text-sm focus:outline-none focus:border-black transition-colors duration-300"
+                            placeholder="your@email.com">
+                    </div>
+
+                    <div>
+                        <label for="subject" class="block sans-text text-sm text-black mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" required
+                            class="w-full px-4 py-3 bg-surface-container border border-border-graphite text-black placeholder-gray-400 sans-text text-sm focus:outline-none focus:border-black transition-colors duration-300"
+                            placeholder="What's this about?">
+                    </div>
+
+                    <div>
+                        <label for="message" class="block sans-text text-sm text-black mb-2">Message</label>
+                        <textarea id="message" name="message" rows="6" required
+                            class="w-full px-4 py-3 bg-surface-container border border-border-graphite text-black placeholder-gray-400 sans-text text-sm focus:outline-none focus:border-black transition-colors duration-300 resize-none"
+                            placeholder="Your message..."></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="sans-text text-[10px] tracking-[0.2em] px-6 py-3 bg-black text-white border border-black hover:bg-white hover:text-black transition-all duration-300 font-medium">
+                        SEND MESSAGE
+                    </button>
+
+                    <p id="form-status" class="sans-text text-sm text-gray-700 hidden"></p>
+                </form>
+
+                <div class="mt-16 pt-8 border-t border-border-graphite">
+                    <p class="sans-text text-sm text-gray-700 mb-4">Or reach out directly:</p>
+                    <div class="flex flex-col gap-3">
+                        <a href="mailto:nimingze@hotmail.com"
+                            class="sans-text text-[10px] tracking-widest text-gray-700 hover:text-black transition-colors">
+                            EMAIL: NIMINGZE@HOTMAIL.COM
+                        </a>
+                        <a href="https://www.linkedin.com/in/nimingze/" target="_blank"
+                            class="sans-text text-[10px] tracking-widest text-gray-700 hover:text-black transition-colors">
+                            LINKEDIN: LINKEDIN.COM/IN/NIMINGZE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer
+        class="w-full py-16 border-t border-border-graphite flex flex-col md:flex-row justify-between items-center px-6 md:px-16 gap-6">
+        <div class="serif-text text-xl text-black">MINGZE NI</div>
+        <p class="sans-text text-[10px] tracking-widest text-gray-600">© 2026 MINGZE NI. Product Leader & Serial
+            Founder.
+        </p>
+        <div class="flex gap-8 sans-text text-[10px] tracking-widest">
+            <a class="text-gray-700 hover:text-black transition-colors"
+                href="https://www.linkedin.com/in/nimingze/">LINKEDIN</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            function extractYouTubeId(url) {
+                if (!url) return null;
+                const patterns = [
+                    /youtu\.be\/([a-zA-Z0-9_-]{11})/,
+                    /youtube\.com\/embed\/([a-zA-Z0-9_-]{11})/,
+                    /youtube\.com\/watch[?&]v=([a-zA-Z0-9_-]{11})/
+                ];
+                for (const p of patterns) {
+                    const m = url.match(p);
+                    if (m) return m[1];
+                }
+                return null;
+            }
+
+            function createIframe(youtubeId, muted = true) {
+                const iframe = document.createElement('iframe');
+                const muteParam = muted ? '1' : '0';
+                iframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&mute=${muteParam}&loop=1&playlist=${youtubeId}&rel=0&controls=0&modestbranding=1&enablejsapi=1`;
+                iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
+                iframe.frameBorder = '0';
+                iframe.style.cssText = [
+                    'position:absolute',
+                    'inset:0',
+                    'width:100%',
+                    'height:100%',
+                    'opacity:0',
+                    'transition:opacity 0.6s ease',
+                    'pointer-events:none'
+                ].join(';');
+                return iframe;
+            }
+
+            function createSoundBtn(iframe, youtubeId) {
+                const btn = document.createElement('button');
+                btn.dataset.muted = 'true';
+                btn.textContent = '[ UNMUTE ]';
+                btn.style.cssText = [
+                    'position:absolute',
+                    'bottom:16px',
+                    'right:16px',
+                    'z-index:10',
+                    'background:rgba(0,0,0,0.75)',
+                    'color:#ffffff',
+                    'border:1.5px solid rgba(255,255,255,0.4)',
+                    'padding:8px 14px',
+                    'font-family:Inter,sans-serif',
+                    'font-size:10px',
+                    'font-weight:500',
+                    'letter-spacing:0.15em',
+                    'cursor:pointer',
+                    'opacity:0',
+                    'transition:opacity 0.5s ease, background 0.2s ease, border-color 0.2s ease, transform 0.2s ease',
+                    'backdrop-filter:blur(8px)',
+                    '-webkit-backdrop-filter:blur(8px)',
+                    'border-radius:3px'
+                ].join(';');
+
+                btn.addEventListener('mouseenter', () => {
+                    btn.style.background = 'rgba(0,0,0,0.88)';
+                    btn.style.borderColor = 'rgba(255,255,255,0.6)';
+                    btn.style.transform = 'scale(1.08)';
+                });
+                btn.addEventListener('mouseleave', () => {
+                    btn.style.background = 'rgba(0,0,0,0.75)';
+                    btn.style.borderColor = 'rgba(255,255,255,0.4)';
+                    btn.style.transform = 'scale(1)';
+                });
+
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const muted = btn.dataset.muted === 'true';
+                    const muteParam = muted ? '0' : '1';
+                    iframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&mute=${muteParam}&loop=1&playlist=${youtubeId}&rel=0&controls=0&modestbranding=1&enablejsapi=1`;
+                    btn.dataset.muted = muted ? 'false' : 'true';
+                    btn.textContent = muted ? '[ MUTE ]' : '[ UNMUTE ]';
+                });
+
+                return btn;
+            }
+
+            const isMobile = window.innerWidth <= 768;
+            const cards = document.querySelectorAll(".project-card");
+
+            // Replace all <video> elements with YouTube thumbnail <img> + title overlay
+            cards.forEach(card => {
+                const dataUrl = card.dataset.youtubeUrl;
+                const sourceEl = card.querySelector("source");
+                const youtubeId = extractYouTubeId(dataUrl) || extractYouTubeId(sourceEl?.getAttribute('src'));
+                if (!youtubeId) return;
+
+                card.dataset.youtubeId = youtubeId;
+
+                const videoEl = card.querySelector("video");
+                if (!videoEl) return;
+                const container = videoEl.parentNode;
+
+                const img = document.createElement('img');
+                img.className = 'w-full h-full object-cover project-video';
+                img.alt = '';
+                img.src = `https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`;
+                img.onerror = () => { img.src = `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`; };
+
+                videoEl.parentNode.replaceChild(img, videoEl);
+
+                // Title overlay at bottom of thumbnail
+                const title = card.querySelector('h3')?.textContent?.trim();
+                if (title) {
+                    const overlay = document.createElement('div');
+                    overlay.className = 'thumbnail-title-overlay';
+                    overlay.style.cssText = [
+                        'position:absolute',
+                        'bottom:0',
+                        'left:0',
+                        'right:0',
+                        'background:linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.3) 55%, transparent 100%)',
+                        'padding:40px 20px 18px',
+                        'pointer-events:none',
+                        'transition:opacity 0.5s ease'
+                    ].join(';');
+
+                    const titleEl = document.createElement('p');
+                    titleEl.textContent = title;
+                    titleEl.style.cssText = [
+                        'font-family:EB Garamond,serif',
+                        'font-size:1.35rem',
+                        'line-height:1.25',
+                        'color:rgba(255,255,255,0.92)',
+                        'font-weight:400',
+                        'letter-spacing:-0.01em'
+                    ].join(';');
+
+                    overlay.appendChild(titleEl);
+                    container.appendChild(overlay);
+                }
+            });
+
+            if (!isMobile) {
+                // Desktop: inject iframe on hover, remove on unhover
+                cards.forEach(card => {
+                    const youtubeId = card.dataset.youtubeId;
+                    if (!youtubeId) return;
+                    const container = card.querySelector('.relative.aspect-video');
+                    let iframe = null;
+
+                    let soundBtn = null;
+
+                    card.addEventListener("mouseenter", () => {
+                        if (iframe) return;
+                        iframe = createIframe(youtubeId);
+                        soundBtn = createSoundBtn(iframe, youtubeId);
+                        container.appendChild(iframe);
+                        container.appendChild(soundBtn);
+                        const overlay = container.querySelector('.thumbnail-title-overlay');
+                        requestAnimationFrame(() => requestAnimationFrame(() => {
+                            iframe.style.opacity = '1';
+                            soundBtn.style.opacity = '1';
+                            if (overlay) overlay.style.opacity = '0';
+                        }));
+                    });
+
+                    card.addEventListener("mouseleave", () => {
+                        if (!iframe) return;
+                        iframe.style.opacity = '0';
+                        if (soundBtn) soundBtn.style.opacity = '0';
+                        const overlay = container.querySelector('.thumbnail-title-overlay');
+                        if (overlay) overlay.style.opacity = '1';
+                        const toRemoveIframe = iframe;
+                        const toRemoveBtn = soundBtn;
+                        iframe = null;
+                        soundBtn = null;
+                        setTimeout(() => {
+                            if (toRemoveIframe.parentNode) toRemoveIframe.parentNode.removeChild(toRemoveIframe);
+                            if (toRemoveBtn?.parentNode) toRemoveBtn.parentNode.removeChild(toRemoveBtn);
+                        }, 600);
+                    });
+                });
+            } else {
+                // Mobile: inject iframe when card is in viewport center
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        const card = entry.target;
+                        const youtubeId = card.dataset.youtubeId;
+                        if (!youtubeId) return;
+                        const container = card.querySelector('.relative.aspect-video');
+                        const img = card.querySelector('.project-video');
+
+                        if (entry.isIntersecting) {
+                            img?.classList.add('mobile-active');
+                            if (!container.querySelector('iframe')) {
+                                const iframe = createIframe(youtubeId);
+                                iframe.style.pointerEvents = 'auto';
+                                container.appendChild(iframe);
+                                requestAnimationFrame(() => requestAnimationFrame(() => {
+                                    iframe.style.opacity = '1';
+                                }));
+                            }
+                        } else {
+                            img?.classList.remove('mobile-active');
+                            const iframe = container.querySelector('iframe');
+                            if (iframe) iframe.parentNode.removeChild(iframe);
+                        }
+                    });
+                }, { root: null, rootMargin: "-25% 0px -25% 0px", threshold: 0.5 });
+
+                cards.forEach(card => observer.observe(card));
+            }
+
+            // Navigation active state on scroll
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section[id]');
+            const navIndex = document.querySelector('.nav-index');
+
+            const updateActiveNav = () => {
+                let currentSection = null;
+                const scrollPos = window.scrollY + 200;
+
+                sections.forEach(section => {
+                    if (section.offsetTop <= scrollPos) {
+                        currentSection = section.id;
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (currentSection && link.classList.contains(`nav-${currentSection}`)) {
+                        link.classList.add('active');
+                    }
+                });
+
+                if (!currentSection) {
+                    navIndex.classList.add('active');
+                } else {
+                    navIndex.classList.remove('active');
+                }
+            };
+
+            window.addEventListener('scroll', updateActiveNav);
+            updateActiveNav();
+
+            // Handle navigation links click with smooth scroll
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    const href = link.getAttribute('href');
+                    if (href === '#') {
+                        e.preventDefault();
+                        navLinks.forEach(l => l.classList.remove('active'));
+                        navIndex.classList.add('active');
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    } else if (href.startsWith('#')) {
+                        e.preventDefault();
+                        const targetId = href.substring(1);
+                        const targetSection = document.getElementById(targetId);
+                        if (targetSection) {
+                            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+
+            // Handle INDEX link click
+            navIndex.addEventListener('click', (e) => {
+                e.preventDefault();
+                navLinks.forEach(link => link.classList.remove('active'));
+                navIndex.classList.add('active');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Contact form submission
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    const formData = new FormData(contactForm);
+                    const statusEl = document.getElementById('form-status');
+
+                    try {
+                        // Replace 'FORM_ID' with your Formspree form ID (see setup instructions below)
+                        const response = await fetch('https://formspree.io/f/xdajykgd', {
+                            method: 'POST',
+                            body: formData,
+                            headers: { 'Accept': 'application/json' }
+                        }).then(r => {
+                            if (r.ok) return r;
+                            throw new Error('Network response was not ok');
+                        });
+
+                        statusEl.textContent = '✓ Message sent successfully. I\'ll get back to you soon.';
+                        statusEl.classList.remove('hidden');
+                        statusEl.style.color = '#0a0a0a';
+                        contactForm.reset();
+
+                        setTimeout(() => {
+                            statusEl.classList.add('hidden');
+                        }, 5000);
+                    } catch (error) {
+                        statusEl.textContent = '✗ Error sending message. Please try again or email directly.';
+                        statusEl.classList.remove('hidden');
+                        statusEl.style.color = '#dc2626';
+                    }
+                });
+            }
+
+            // Header scroll effect
+            window.addEventListener('scroll', () => {
+                const nav = document.querySelector('nav');
+                if (window.scrollY > 40) {
+                    nav.classList.add('glass-header', 'h-16');
+                    nav.classList.remove('h-20');
+                } else {
+                    nav.classList.remove('glass-header', 'h-16');
+                    nav.classList.add('h-20');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
