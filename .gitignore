@@ -1,0 +1,19 @@
+# Video files
+*.mov
+*.mp4
+*.avi
+*.mkv
+*.webm
+[video]*/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node modules (if using any build tools)
+node_modules/
+
+# Environment
+.env
+.env.local
