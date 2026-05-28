@@ -933,8 +933,17 @@
                 const img = document.createElement('img');
                 img.className = 'w-full h-full object-cover project-video';
                 img.alt = '';
+                let thumbFellBack = false;
+                const fallbackThumb = () => {
+                    if (thumbFellBack) return;
+                    thumbFellBack = true;
+                    img.src = `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
+                };
                 img.src = `https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`;
-                img.onerror = () => { img.src = `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`; };
+                // maxresdefault 不存在时 YouTube 会返回一张 120x90 的灰色占位图(HTTP 200),
+                // 不会触发 onerror,所以这里额外用 naturalWidth 判断并主动退回 hqdefault。
+                img.onload = () => { if (img.naturalWidth <= 120) fallbackThumb(); };
+                img.onerror = fallbackThumb;
 
                 videoEl.parentNode.replaceChild(img, videoEl);
 
