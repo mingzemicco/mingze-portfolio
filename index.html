@@ -128,11 +128,6 @@
             .grid {
                 gap: 4rem !important;
             }
-
-            .project-video.mobile-active {
-                opacity: 1 !important;
-                filter: none !important;
-            }
         }
 
         /* Navigation active state */
@@ -171,13 +166,33 @@
         ::-webkit-scrollbar {
             display: none;
         }
+
+        @keyframes rainbow-shift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 200% 50%;
+            }
+        }
+
+        .rainbow-text {
+            background: linear-gradient(90deg,
+                    #ff0080, #ff4500, #ffd700, #00c853, #00b0ff, #7c4dff, #ff0080);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbow-shift 4s linear infinite;
+        }
     </style>
 </head>
 
 <body class="sans-text selection:bg-black selection:text-white overflow-x-hidden">
 
-    <nav
-        class="fixed top-0 w-full h-20 z-50 flex justify-between items-center px-6 md:px-16 border-b border-border-graphite transition-all duration-500" style="background-color: rgba(250,250,250,0.82); backdrop-filter: blur(8px);">
+    <nav class="fixed top-0 w-full h-20 z-50 flex justify-between items-center px-6 md:px-16 border-b border-border-graphite transition-all duration-500"
+        style="background-color: rgba(250,250,250,0.82); backdrop-filter: blur(8px);">
         <div class="serif-text text-xl md:text-2xl tracking-tighter text-black font-medium">Mingze NI Portfolio</div>
         <div class="hidden md:flex gap-8 items-center">
             <a class="nav-link nav-index sans-text text-[10px] tracking-[0.25em] text-black border-b border-black pb-1 transition-all duration-300"
@@ -202,7 +217,8 @@
         <section class="px-6 md:px-16 mb-24 md:mb-40 max-w-5xl">
             <h1 class="serif-text text-4xl md:text-7xl text-black leading-[1.1] tracking-tight mb-8">
 
-                Building computer-use agents that work inside the browser — autonomous, production-grade,
+                Building <span class="rainbow-text">Computer-use agents</span>,
+                autonomous, production-grade,
                 enterprise-ready.
 
 
@@ -234,26 +250,46 @@
 
                 <div
                     class="animate-marquee flex whitespace-nowrap items-center gap-16 md:gap-32 shrink-0 pr-16 md:pr-32 group-hover:[animation-play-state:paused]">
-                    <span class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">RENAULT</span>
-                    <span class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">IBM</span>
-                    <span class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">BCG</span>
-                    <span class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">AXA</span>
-                    <span class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">BNP PARIBAS</span>
-                    <span class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">ENGIE</span>
-                    <span class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">ORANGE</span>
-                    <span class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">ALCATEL LUCENT</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">RENAULT</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">IBM</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">BCG</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">AXA</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">BNP
+                        PARIBAS</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">ENGIE</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">ORANGE</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">ALCATEL
+                        LUCENT</span>
                 </div>
 
                 <div class="animate-marquee flex whitespace-nowrap items-center gap-16 md:gap-32 shrink-0 pr-16 md:pr-32 group-hover:[animation-play-state:paused]"
                     aria-hidden="true">
-                    <span class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">RENAULT</span>
-                    <span class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">IBM</span>
-                    <span class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">BCG</span>
-                    <span class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">AXA</span>
-                    <span class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">BNP PARIBAS</span>
-                    <span class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">ENGIE</span>
-                    <span class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">ORANGE</span>
-                    <span class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">ALCATEL LUCENT</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">RENAULT</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">IBM</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">BCG</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">AXA</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">BNP
+                        PARIBAS</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">ENGIE</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">ORANGE</span>
+                    <span
+                        class="sans-text text-xl md:text-3xl font-bold tracking-tighter text-zinc-600 hover:text-zinc-300 transition-colors cursor-default">ALCATEL
+                        LUCENT</span>
                 </div>
             </div>
         </section>
@@ -570,7 +606,8 @@
                 <div class="project-card group cursor-pointer">
                     <div
                         class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
-                        <video class="w-full h-full object-cover project-video" loop muted playsinline preload="metadata">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
                             <source src="https://youtu.be/xMK92IKb2HE" type="video/mp4">
                         </video>
                         <div class="absolute top-3 left-3 sans-text text-[9px] tracking-widest text-black/85"> //
@@ -582,7 +619,8 @@
                             dashboard engineered for institutional hedge fund applications. By ingestive real-time
                             futures market data and modeling structural carry factors, this predictive machine
                             translates raw global macro variables into high-conviction EUR/USD directional signals.</p>
-                        <span class="sans-text text-[9px] tracking-widest text-gray-700 border border-gray-200 px-2 py-0.5 font-mono w-fit">[MACRO
+                        <span
+                            class="sans-text text-[9px] tracking-widest text-gray-700 border border-gray-200 px-2 py-0.5 font-mono w-fit">[MACRO
                             INTELLIGENCE]</span>
                     </div>
                 </div>
@@ -590,19 +628,22 @@
                 <div class="project-card group cursor-pointer">
                     <div
                         class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
-                        <video class="w-full h-full object-cover project-video" loop muted playsinline preload="metadata">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
                             <source src="https://youtu.be/Thd2-ojzPZY" type="video/mp4">
                         </video>
                         <div class="absolute top-3 left-3 sans-text text-[9px] tracking-widest text-black/85"> //
                             ASYMMETRIC RISK</div>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <h3 class="serif-text text-lg text-black leading-tight">Global Equities Sharpe/Sortino Alpha Ranker</h3>
+                        <h3 class="serif-text text-lg text-black leading-tight">Global Equities Sharpe/Sortino Alpha
+                            Ranker</h3>
                         <p class="sans-text text-xs text-gray-700 leading-relaxed">Built specifically for asset managers
                             seeking non-correlated returns. This analytical core continuously scans major global
                             indices—including the S&P 500, HKEX, CAC 40, and Nikkei—ranking them via dynamic Sharpe and
                             Sortino algorithms to isolate asymmetric risk-reward profiles.</p>
-                        <span class="sans-text text-[9px] tracking-widest text-gray-700 border border-gray-200 px-2 py-0.5 font-mono w-fit">[ALPHA
+                        <span
+                            class="sans-text text-[9px] tracking-widest text-gray-700 border border-gray-200 px-2 py-0.5 font-mono w-fit">[ALPHA
                             SCREENER]</span>
                     </div>
                 </div>
@@ -610,19 +651,23 @@
                 <div class="project-card group cursor-pointer">
                     <div
                         class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
-                        <video class="w-full h-full object-cover project-video" loop muted playsinline preload="metadata">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
                             <source src="https://youtu.be/oK4UiBJuDUI" type="video/mp4">
                         </video>
                         <div class="absolute top-3 left-3 sans-text text-[9px] tracking-widest text-black/85"> //
                             REASONING INFERENCE</div>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <h3 class="serif-text text-lg text-black leading-tight">S&P 500 LLM-Driven AI Disruption Risk Screener</h3>
-                        <p class="sans-text text-xs text-gray-700 leading-relaxed">How do you hedge against the AI revolution? This
+                        <h3 class="serif-text text-lg text-black leading-tight">S&P 500 LLM-Driven AI Disruption Risk
+                            Screener</h3>
+                        <p class="sans-text text-xs text-gray-700 leading-relaxed">How do you hedge against the AI
+                            revolution? This
                             screener utilizes advanced LLM reasoning to evaluate the structural vulnerability of
                             every S&P 500 company against emerging AI capabilities, generating automated deep-dive
                             reasoning to identify strategic Long/Short opportunities.</p>
-                        <span class="sans-text text-[9px] tracking-widest text-gray-700 border border-gray-200 px-2 py-0.5 font-mono w-fit">[LLM
+                        <span
+                            class="sans-text text-[9px] tracking-widest text-gray-700 border border-gray-200 px-2 py-0.5 font-mono w-fit">[LLM
                             FACTOR]</span>
                     </div>
                 </div>
@@ -630,7 +675,8 @@
                 <div class="project-card group cursor-pointer">
                     <div
                         class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
-                        <video class="w-full h-full object-cover project-video" loop muted playsinline preload="metadata">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
                             <source src="https://youtu.be/Hj67tS7UidM" type="video/mp4">
                         </video>
                         <div class="absolute top-3 left-3 sans-text text-[9px] tracking-widest text-black/85"> //
@@ -638,11 +684,13 @@
                     </div>
                     <div class="flex flex-col gap-2">
                         <h3 class="serif-text text-lg text-black leading-tight">CEO Sincerity & Pivot Tracker</h3>
-                        <p class="sans-text text-xs text-gray-700 leading-relaxed">Designed to audit executive integrity. This
+                        <p class="sans-text text-xs text-gray-700 leading-relaxed">Designed to audit executive
+                            integrity. This
                             NLP-powered intelligence tool processes multi-quarter corporate earnings transcripts
                             to quantify the "Execution Gap"—building a structural sincerity index that gives investors
                             an un-gameable metric on management quality.</p>
-                        <span class="sans-text text-[9px] tracking-widest text-gray-700 border border-gray-200 px-2 py-0.5 font-mono w-fit">[TRANSCRIPT
+                        <span
+                            class="sans-text text-[9px] tracking-widest text-gray-700 border border-gray-200 px-2 py-0.5 font-mono w-fit">[TRANSCRIPT
                             AUDIT]</span>
                     </div>
                 </div>
@@ -650,19 +698,24 @@
                 <div class="project-card group cursor-pointer">
                     <div
                         class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
-                        <video class="w-full h-full object-cover project-video" loop muted playsinline preload="metadata">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
                             <source src="https://youtu.be/NoBNPG6kNC4" type="video/mp4">
                         </video>
                         <div class="absolute top-3 left-3 sans-text text-[9px] tracking-widest text-black/85"> //
                             RECON PIPELINE</div>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <h3 class="serif-text text-lg text-black leading-tight">Unified Institutional Market Data Engine</h3>
-                        <p class="sans-text text-xs text-gray-700 leading-relaxed">A centralized, high-throughput database compiling
-                            comprehensive financial fundamentals for all major equities—aggregating real-time pricing data,
+                        <h3 class="serif-text text-lg text-black leading-tight">Unified Institutional Market Data Engine
+                        </h3>
+                        <p class="sans-text text-xs text-gray-700 leading-relaxed">A centralized, high-throughput
+                            database compiling
+                            comprehensive financial fundamentals for all major equities—aggregating real-time pricing
+                            data,
                             income statements, balance sheets, and historical earnings transcripts into a single
                             cohesive developer API and frontend UI.</p>
-                        <span class="sans-text text-[9px] tracking-widest text-gray-700 border border-gray-200 px-2 py-0.5 font-mono w-fit">[DATA
+                        <span
+                            class="sans-text text-[9px] tracking-widest text-gray-700 border border-gray-200 px-2 py-0.5 font-mono w-fit">[DATA
                             ENGINE]</span>
                     </div>
                 </div>
@@ -670,7 +723,8 @@
                 <div class="project-card group cursor-pointer">
                     <div
                         class="relative aspect-video w-full mb-4 bg-surface-container overflow-hidden border border-border-graphite">
-                        <video class="w-full h-full object-cover project-video" loop muted playsinline preload="metadata">
+                        <video class="w-full h-full object-cover project-video" loop muted playsinline
+                            preload="metadata">
                             <source src="https://youtu.be/ARGeE2UEX4Y" type="video/mp4">
                         </video>
                         <div class="absolute top-3 left-3 sans-text text-[9px] tracking-widest text-black/85"> //
@@ -678,11 +732,13 @@
                     </div>
                     <div class="flex flex-col gap-2">
                         <h3 class="serif-text text-lg text-black leading-tight">S&P Founder-Led Alpha Screener</h3>
-                        <p class="sans-text text-xs text-gray-700 leading-relaxed">In periods of paradigm shifts like the AI
+                        <p class="sans-text text-xs text-gray-700 leading-relaxed">In periods of paradigm shifts like
+                            the AI
                             revolution, corporate agility is the ultimate separator. This index tracks founder-run
                             vs. professionally managed companies across the S&P 500, serving as a high-conviction
                             structural Alpha signal for fund managers.</p>
-                        <span class="sans-text text-[9px] tracking-widest text-gray-700 border border-gray-200 px-2 py-0.5 font-mono w-fit">[GOVERNANCE
+                        <span
+                            class="sans-text text-[9px] tracking-widest text-gray-700 border border-gray-200 px-2 py-0.5 font-mono w-fit">[GOVERNANCE
                             ALGORITHMS]</span>
                     </div>
                 </div>
@@ -906,14 +962,90 @@
                 }
             });
 
+            // Shared fullscreen modal for both desktop and mobile
+            const modal = document.createElement('div');
+            modal.style.cssText = [
+                'display:none',
+                'position:fixed',
+                'inset:0',
+                'z-index:9999',
+                'background:rgba(0,0,0,0.82)',
+                'backdrop-filter:blur(6px)',
+                '-webkit-backdrop-filter:blur(6px)',
+                'flex-direction:column',
+                'align-items:center',
+                'justify-content:center'
+            ].join(';');
+
+            const closeBtn = document.createElement('button');
+            closeBtn.innerHTML = '&#x2715;';
+            closeBtn.style.cssText = [
+                'position:absolute',
+                'top:20px',
+                'right:24px',
+                'color:#fff',
+                'background:rgba(255,255,255,0.12)',
+                'border:1px solid rgba(255,255,255,0.25)',
+                'border-radius:50%',
+                'width:40px',
+                'height:40px',
+                'font-size:16px',
+                'cursor:pointer',
+                'display:flex',
+                'align-items:center',
+                'justify-content:center',
+                'backdrop-filter:blur(4px)',
+                '-webkit-backdrop-filter:blur(4px)',
+                'transition:background 0.2s ease',
+                'z-index:10'
+            ].join(';');
+            closeBtn.addEventListener('mouseenter', () => closeBtn.style.background = 'rgba(255,255,255,0.22)');
+            closeBtn.addEventListener('mouseleave', () => closeBtn.style.background = 'rgba(255,255,255,0.12)');
+
+            const modalInner = document.createElement('div');
+            modalInner.style.cssText = [
+                'position:relative',
+                'width:min(90vw, 160vh)',
+                'aspect-ratio:16/9'
+            ].join(';');
+
+            modal.appendChild(closeBtn);
+            modal.appendChild(modalInner);
+            document.body.appendChild(modal);
+
+            function openModal(youtubeId) {
+                modalInner.innerHTML = '';
+                const iframe = document.createElement('iframe');
+                iframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0&modestbranding=1`;
+                iframe.allow = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
+                iframe.allowFullscreen = true;
+                iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:none;';
+                modalInner.appendChild(iframe);
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeModal() {
+                modal.style.display = 'none';
+                modalInner.innerHTML = '';
+                document.body.style.overflow = '';
+            }
+
+            closeBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeModal();
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closeModal();
+            });
+
             if (!isMobile) {
-                // Desktop: inject iframe on hover, remove on unhover
+                // Desktop: hover preview + click to open fullscreen modal
                 cards.forEach(card => {
                     const youtubeId = card.dataset.youtubeId;
                     if (!youtubeId) return;
                     const container = card.querySelector('.relative.aspect-video');
                     let iframe = null;
-
                     let soundBtn = null;
 
                     card.addEventListener("mouseenter", () => {
@@ -945,36 +1077,33 @@
                             if (toRemoveBtn?.parentNode) toRemoveBtn.parentNode.removeChild(toRemoveBtn);
                         }, 600);
                     });
+
+                    container.style.cursor = 'pointer';
+                    container.addEventListener('click', () => openModal(youtubeId));
                 });
             } else {
-                // Mobile: inject iframe when card is in viewport center
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        const card = entry.target;
-                        const youtubeId = card.dataset.youtubeId;
-                        if (!youtubeId) return;
-                        const container = card.querySelector('.relative.aspect-video');
-                        const img = card.querySelector('.project-video');
+                // Mobile: tap video thumbnail to open fullscreen modal
+                cards.forEach(card => {
+                    const youtubeId = card.dataset.youtubeId;
+                    if (!youtubeId) return;
+                    const container = card.querySelector('.relative.aspect-video');
 
-                        if (entry.isIntersecting) {
-                            img?.classList.add('mobile-active');
-                            if (!container.querySelector('iframe')) {
-                                const iframe = createIframe(youtubeId);
-                                iframe.style.pointerEvents = 'auto';
-                                container.appendChild(iframe);
-                                requestAnimationFrame(() => requestAnimationFrame(() => {
-                                    iframe.style.opacity = '1';
-                                }));
-                            }
-                        } else {
-                            img?.classList.remove('mobile-active');
-                            const iframe = container.querySelector('iframe');
-                            if (iframe) iframe.parentNode.removeChild(iframe);
-                        }
-                    });
-                }, { root: null, rootMargin: "-25% 0px -25% 0px", threshold: 0.5 });
+                    const playIcon = document.createElement('div');
+                    playIcon.style.cssText = [
+                        'position:absolute',
+                        'inset:0',
+                        'display:flex',
+                        'align-items:center',
+                        'justify-content:center',
+                        'pointer-events:none',
+                        'z-index:5'
+                    ].join(';');
+                    playIcon.innerHTML = `<div style="width:52px;height:52px;background:rgba(0,0,0,0.6);border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid rgba(255,255,255,0.7);backdrop-filter:blur(4px)"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></div>`;
+                    container.appendChild(playIcon);
 
-                cards.forEach(card => observer.observe(card));
+                    container.style.cursor = 'pointer';
+                    container.addEventListener('click', () => openModal(youtubeId));
+                });
             }
 
             // Navigation active state on scroll
